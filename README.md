@@ -2,7 +2,7 @@
 
 This repository contains the dataset, model training scripts, and reproducibility materials for the paper titled:
 
-**"Extracting Strategic Insights from Web3 Discourse: A Transformer-Based Framework for Domain, Emotion, and Intent Classification"**
+**"Revealing Strategic Insights in Web3 Discourse: A Three-Stage Transformer Classification of Domain, Emotion, and Intent"**
 
 ---
 
@@ -71,13 +71,6 @@ Each model has a dedicated subdirectory, organized by classification stage.
 
 ---
 
-## 📜 Citation
-
-If you use this resource, please cite:
-
-> Falaah. *Extracting Strategic Insights from Web3 Discourse: A Transformer-Based Framework for Domain, Emotion, and Intent Classification*. (2025) [Paper link pending]
-
----
 
 ## 🔗 Links
 
