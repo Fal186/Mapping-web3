@@ -2,7 +2,7 @@
 
 This repository contains the dataset, model training scripts, and reproducibility materials for the paper titled:
 
-**"Revealing Strategic Insights in Web3 Discourse: A Three-Stage Transformer Classification of Domain, Emotion, and Intent"**
+**"What Drives Trust in Decentralized Communities? A Multidimensional Analysis of Web3 Discourse"**
 
 ---
 
@@ -17,7 +17,7 @@ Mapping-web3/
 │   └── web3_Stage3_communicative_intent.csv
 │
 ├── codes/
-│   ├── BERT/
+│   ├── CryptoBERT/
 │   │   ├── Stage 1/
 │   │   ├── Stage 2/
 │   │   └── Stage 3/
@@ -37,7 +37,7 @@ This project introduces a three-stage classification framework to analyze how We
 - **Felt** (Stage 2: Emotional Tone Classification)  
 - **Communicated** (Stage 3: Communicative Intent Classification)  
 
-Two transformer-based models (BERT and RoBERTa) were fine-tuned and evaluated across these tasks.
+Two transformer-based models (CryptoBERT and RoBERTa) were fine-tuned and evaluated across these tasks.
 
 ---
 
@@ -49,16 +49,16 @@ Labeled datasets are available in the `/dataset` folder, with one CSV file per c
 - `web3_Stage2_emotional_tone.csv`  
 - `web3_Stage3_communicative_intent.csv`  
 
-Each file contains anonymized, preprocessed social media data from X (formerly Twitter), Reddit, and YouTube.
+Each file contains anonymized, preprocessed social media data from X (formerly Twitter), Reddit, Youtube, and additional data from ENS DAO Forum.
 
 ---
 
 ## 🧠 Model Training Scripts
 
-The `/codes` folder contains all scripts for fine-tuning both BERT and RoBERTa across three stages.  
+The `/codes` folder contains all scripts for fine-tuning both CryptoBERT and RoBERTa across three stages.  
 Each model has a dedicated subdirectory, organized by classification stage.
 
-- Use the files in `codes/BERT` or `codes/RoBERTa` for training or evaluation  
+- Use the files in `codes/CryptoBERT` or `codes/RoBERTa` for training or evaluation  
 - Fine-tuning configurations (batch size, learning rate, epochs) follow the best-performing setups from the paper  
 
 ---
