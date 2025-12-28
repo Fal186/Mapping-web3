@@ -25,6 +25,11 @@ Mapping-web3/
 │       ├── Stage 1/
 │       ├── Stage 2/
 │       └── Stage 3/
+├
+├── prompt/
+    ├── prompt for stage 1/
+    ├── prompt for stage 2/
+    ├── prompt for stage 3/
 ```
 
 ---
