@@ -1,8 +1,4 @@
-   def call_claude_api(self, text: str) -> Dict:
-        """Memanggil Claude API dengan proper error handling"""
-        payload = {
-            "model": "claude-3-haiku-20240307",
-            "system": "You are a communication expert specializing in identifying user intent in online discourse. You analyze text to determine whether it is Informational, Expressive, or Promotional.",
+           "system": "You are a communication expert specializing in identifying user intent in online discourse. You analyze text to determine whether it is Informational, Expressive, or Promotional.",
             "messages": [
                 {
                     "role": "user",
