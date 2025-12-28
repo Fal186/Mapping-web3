@@ -1,0 +1,20 @@
+  def call_claude_api(self, text: str) -> Dict:
+        """Memanggil Claude API dengan proper error handling"""
+        payload = {
+            "model": "claude-3-haiku-20240307",
+            "system":"You are an expert on web3 who can classify every text into the categories based on contextual understanding of the text, not keyword matching",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": f"""Classify the following text inside the excel file into one or more of the following Web3 components"
+                    "If the text does not fit any category, label it as 'Uncategorized'.\n\n"
+                    - Core Infrastructure & Protocols: This label would cover foundational technologies, blockchain networks, Layer 1 and Layer 2 solutions, consensus mechanisms, and interoperability protocols
+                    - Decentralized Finance (DeFi) & Financial Applications: This would cover not only DeFi but also other financial applications on blockchain, like payments, asset management, and credit scoring, even if they don’t directly label themselves as DeFi
+                    - Digital Assets & Collectibles (NFTs): Expanding beyond "NFTs," this label could include any blockchain-based digital asset, from NFTs to tokenized real-world assets (e.g., tokenized art, music rights, or even real estate
+                    - Decentralized Applications (DApps) & Gaming): This label would capture blockchain-based applications more broadly, covering gaming, metaverse platforms, and other decentralized apps (DApps) like social media or productivity tools
+                    - DAO & Governance Mechanisms: This label would cover discussions about Decentralized Autonomous Organizations (DAOs), voting, governance structures, and decentralized decision-making.
+
+                    Text to classify: "{text}"
+
+                    Respond ONLY with the category names, separated by commas if multiple categories apply."""
+                }

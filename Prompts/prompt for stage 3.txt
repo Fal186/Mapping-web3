@@ -1,0 +1,20 @@
+   def call_claude_api(self, text: str) -> Dict:
+        """Memanggil Claude API dengan proper error handling"""
+        payload = {
+            "model": "claude-3-haiku-20240307",
+            "system": "You are a communication expert specializing in identifying user intent in online discourse. You analyze text to determine whether it is Informational, Expressive, or Promotional.",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": f"""Classify the following text into ONLY ONE of the following three intent categories. If the text does not clearly belong to one category, choose the closest fit.
+
+1️⃣ **Informational** – Provides neutral, fact-based content about Web3 without opinion, debate, or promotion (e.g., "Ethereum transitioned to Proof-of-Stake to improve energy efficiency.").
+
+2️⃣ **Expressive** – Includes personal opinions, critiques, or emotional responses about Web3, covering both positive and negative perspectives (e.g., "Web3 will change the world!" OR "NFTs are just a money grab.").
+
+3️⃣ **Promotional** – Advertises, hypes, or endorses a Web3 project, token, or service, encouraging adoption or investment (e.g., "This DeFi protocol is the future! Get in before it’s too late!").
+
+Text to classify: "{text}"
+
+Respond ONLY with one of the following: Informational, Expressive, or Promotional.
+"""

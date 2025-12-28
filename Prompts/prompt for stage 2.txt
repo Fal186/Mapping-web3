@@ -1,0 +1,19 @@
+    """Memanggil Claude API dengan proper error handling"""
+        payload = {
+            "model": "claude-3-haiku-20240307",
+            "system": "You are a psychologist expert on understanding human emotion and can classify every text into the emotional trait categories based on contextual understanding of the text, not keyword matching",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": f"""Classify the following text inside the excel file into one or more emotional traits based on the categories below. If the text does not fit any category, label it as "Uncategorized." Remember, each text can have multiple emotions (note you can label it into more than 1 category if it fits)
+
+                    "If the text does not fit any category, label it as 'Uncategorized'.\n\n"
+
+                    - Optimism  Reflects positive attitudes toward Web3 potential, such as excitement about its benefits, future applications, and impact on industries.
+                    - Skepticism Captures doubt or mistrust about Web3 claims, functionality, or scalability. This is common in discussions around new technologies where people question viability or hype.
+                    - Frustration Reflects negative experiences or disappointments with Web3 applications, platforms, or companies. This can include frustration with usability, security issues, or unmet expectations.
+                    - Curiosity Represents a neutral or inquisitive stance, often characterized by questions, exploration of Web3 use cases, and learning intentions.
+                    - Concern Encompasses worry or apprehension about Web3 risks, such as privacy, regulatory issues, or potential economic impacts
+
+                    Text to classify: "{text}"
+                    Respond ONLY with the category names, separated by commas if multiple categories apply."""
