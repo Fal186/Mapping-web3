@@ -79,5 +79,5 @@ Each model has a dedicated subdirectory, organized by classification stage.
 
 ## 🔗 Links
 
-- 📄 [Paper (Coming Soon)](https://)  
+- 📄 [Paper (Coming Soon)](https://doi.org/10.1016/j.dajour.2026.100702)  
 - 📁 [GitHub Repository](https://github.com/Fal186/Mapping-web3)
