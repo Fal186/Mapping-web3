@@ -2,7 +2,7 @@
 
 This repository contains the dataset, model training scripts, and reproducibility materials for the paper titled:
 
-**"What Drives Trust in Decentralized Communities? A Multidimensional Analysis of Web3 Discourse"**
+**"A decision analytics framework for interpreting trust signals in decentralized digital communities"**
 
 ---
 
